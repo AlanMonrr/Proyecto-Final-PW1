@@ -1,13 +1,15 @@
-
 :root {
     --color-primario: #176B52;
     --color-secundario: #23866A;
     --color-terciario: #A8CDB5;
+
     --color-fondo: #F5F7F4;
     --color-superficie: #FFFFFF;
     --color-verde-claro: #E5F0E9;
+
     --color-texto: #263B35;
     --color-texto-secundario: #71817A;
+
     --color-borde: #DCE5DE;
     --color-hover: #EDF4EF;
 
@@ -47,17 +49,23 @@ body {
     z-index: 500;
 }
 
-.header-contenedor {
+.header__container {
     max-width: var(--max-width);
     height: 100%;
     margin: 0 auto;
     padding: 0 var(--padding-base);
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.marca-logo {
+.header__brand {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -65,56 +73,58 @@ body {
     color: var(--color-texto);
 }
 
-.logo-icono {
+.header__logo-icon {
     width: 38px;
     height: 38px;
     background-color: var(--color-primario);
     color: var(--color-superficie);
     border-radius: 10px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     font-size: 22px;
     font-weight: bold;
 }
 
-.marca-nombre {
+.header__brand-name {
     font-size: 20px;
     font-weight: 600;
     letter-spacing: -1px;
 }
 
-.marca-nombre small {
+.header__brand-country {
     font-size: 10px;
     letter-spacing: 2px;
     color: var(--color-texto-secundario);
 }
 
-.navegacion {
+.header__nav {
     display: none;
     align-items: center;
     gap: 32px;
 }
 
-.nav-enlace {
+.header__link {
     text-decoration: none;
     color: var(--color-texto-secundario);
     font-size: 14px;
     transition: var(--transicion);
 }
 
-.nav-enlace:hover,
-.nav-enlace.activo {
+.header__link:hover,
+.header__link--active {
     color: var(--color-primario);
 }
 
-.header-acciones {
+.header__actions {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.ubicacion {
+.header__location {
     display: none;
     border: none;
     background: transparent;
@@ -123,7 +133,7 @@ body {
     cursor: pointer;
 }
 
-.btn-reportar {
+.header__button {
     background-color: var(--color-primario);
     color: var(--color-superficie);
     border: none;
@@ -133,11 +143,11 @@ body {
     transition: var(--transicion);
 }
 
-.btn-reportar:hover {
+.header__button:hover {
     background-color: var(--color-secundario);
 }
 
-.btn-menu {
+.header__menu {
     display: block;
     border: none;
     background: transparent;
@@ -152,11 +162,11 @@ body {
         --padding-base: 18px;
     }
 
-    .ubicacion {
+    .header__location {
         display: block;
     }
 
-    .header-acciones {
+    .header__actions {
         gap: 14px;
     }
 }
@@ -167,30 +177,30 @@ body {
         --padding-base: 20px;
     }
 
-    .navegacion {
+    .header__nav {
         display: flex;
         gap: 24px;
     }
 
-    .btn-menu {
+    .header__menu {
         display: none;
     }
 
-    .marca-nombre {
+    .header__brand-name {
         font-size: 23px;
     }
 
-    .btn-reportar {
+    .header__button {
         padding: 11px 17px;
     }
 }
 
 @media (min-width: 1200px) {
-    .navegacion {
+    .header__nav {
         gap: 32px;
     }
 
-    .header-acciones {
+    .header__actions {
         gap: 18px;
     }
 }
