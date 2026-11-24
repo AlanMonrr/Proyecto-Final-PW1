@@ -1,41 +1,63 @@
 
-<header class="header">
-    <div class="header__container">
+<!DOCTYPE html>
+<html lang="es">
 
-        <div class="header__brand">
-            <a href="#" class="header__logo" aria-label="Trama Bolivia, inicio">
-                <span class="header__logo-icon">T</span>
-                <span class="header__brand-name">
-                    trama
-                    <small class="header__brand-country">BOLIVIA</small>
-                </span>
-            </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trama Bolivia</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+
+            <div class="header__brand">
+                <a href="#" class="header__logo" aria-label="Trama Bolivia, inicio">
+                    <span class="header__logo-icon">T</span>
+                    <span class="header__brand-name">
+                        trama
+                        <small class="header__brand-country">BOLIVIA</small>
+                    </span>
+                </a>
+            </div>
+
+            <nav class="header__nav" aria-label="Navegación principal">
+                <a href="#" class="header__link header__link--active">Explorar</a>
+                <a href="#" class="header__link">Guardados</a>
+                <a href="#" class="header__link">Cómo aportar</a>
+            </nav>
+
+            <div class="header__actions">
+
+                <button type="button" class="header__location">
+                    <span aria-hidden="true">⌖</span>
+                    La Paz, Bolivia
+                    <span aria-hidden="true">⌄</span>
+                </button>
+
+                <button type="button" class="header__button">
+                    <span aria-hidden="true">+</span>
+                    Reportar
+                </button>
+
+                <button type="button" class="header__menu" aria-label="Abrir menú">
+                    ☰
+                </button>
+
+            </div>
+
         </div>
+    </header>
 
-        <nav class="header__nav" aria-label="Navegación principal">
-            <a href="#" class="header__link header__link--active">Explorar</a>
-            <a href="#" class="header__link">Guardados</a>
-            <a href="#" class="header__link">Cómo aportar</a>
-        </nav>
+    <main class="main">
+        
+    </main>
 
-        <div class="header__actions">
+</body>
+</html>
 
-            <button type="button" class="header__location">
-                <span aria-hidden="true">⌖</span>
-                La Paz, Bolivia
-                <span aria-hidden="true">⌄</span>
-            </button>
-
-            <button type="button" class="header__button">
-                <span aria-hidden="true">+</span>
-                Reportar
-            </button>
-
-            <button type="button" class="header__menu" aria-label="Abrir menú">
-                ☰
-            </button>
-
-        </div>
-
-    </div>
-</header>
